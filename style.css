@@ -12,6 +12,12 @@ h4 {
     padding-left: 20px;
 }
 
+#container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #titulo {
     color: brown;
     text-align: center;
