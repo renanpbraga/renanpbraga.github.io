@@ -1,5 +1,6 @@
 body {
     background-color: burlywood;
+    font-family: helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -14,6 +15,8 @@ h4 {
 #titulo {
     color: brown;
     text-align: center;
+    font-size: 2.5em;
+    line-height: 10px;
 }
 
 #subtitulo {
@@ -25,8 +28,16 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto
+    
 }
 
 .description {
     text-align: center;
+}
+
+#rodape {
+    text-align: center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
