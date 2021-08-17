@@ -1,19 +1,97 @@
-light-mode {
-  --primary-color: #6200EE;
-  --primary-variant-color: #3700B3;
-  --secondary-color: #03DAC6;
-  --second-variant-color: #018786;
-  --backgound-color: #ffffff;
-  --surface-color: #ffffff;
-  --error-color: #b00020;
+:root{
+  --light-primary-color: #6200EE;
+  --light-primary-variant-color: #3700B3;
+  --light-secondary-color: #03DAC6;
+  --light-second-variant-color: #018786;
+  --light-backgound-color: #ffffff;
+  --light-surface-color: #ffffff;
+  --light-error-color: #b00020;
+  --dark-primary-color: #BB86FC;
+  --dark-primary-variant-color: #3700B3;
+  --dark-secondary-color: #03DAC6;
+  --dark-second-variant-color: #018786;
+  --dark-backgound-color: #121212;
+  --dark-surface-color: #121212;
+  --dark-error-color: #cf6679;
+}
+* {
+  margin: 0;
+}
+body {
+  background-color: #121212;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-dark-mode {
-  --primary-color: #BB86FC;
-  --primary-variant-color: #3700B3;
-  --secondary-color: #03DAC6;
-  --second-variant-color: #018786;
-  --backgound-color: #121212;
-  --surface-color: #121212;
-  --error-color: #cf6679;
+a {
+  color: #BB86FC;
+  margin: 0 5px;  
+}
+
+a:hover {
+  color: #03DAC6;
+}
+
+.nav-bar {
+  align-items: center;
+  background-color: #0c0c0c;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  height: 50px;
+  padding: 0 100px;
+  width: 100%;
+}
+
+.rb-initials {
+  font-size: 2em;
+  font-weight: 700;
+  color: #03DAC6;
+  margin-right: 20px;
+}
+
+.main-container {
+  margin-top: 100px;
+  margin-left: 100px;
+  width:85%;
+}
+
+.heading1 {
+  border-bottom: 1px solid var(--light-primary-color);
+  color: #03DAC6;
+  font-size: 3em;
+  margin-left: 5px;
+  text-shadow: 2px 2px 4px black;
+}
+
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: justify;
+  width: 60%;
+  text-shadow: 1px 1px 2px black;
+}
+
+.about-me-text {
+  align-self: center;
+  color: var(--dark-primary-color);
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+.me-picture {
+  height: 100%;
+  margin-left:5px;
+}
+
+.about-me-description {
+  display:flex;
+  height: 200px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.emphasis-text {
+  color: var(--dark-secondary-color);
+  font-weight: 900;
 }
