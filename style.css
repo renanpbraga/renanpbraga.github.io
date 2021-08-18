@@ -3,7 +3,7 @@
   --light-primary-variant-color: #3700B3;
   --light-secondary-color: #03DAC6;
   --light-second-variant-color: #018786;
-  --light-backgound-color: #ffffff;
+  --light-backgound-color: #f9f9fa;
   --light-surface-color: #ffffff;
   --light-error-color: #b00020;
   --dark-primary-color: #BB86FC;
@@ -18,6 +18,8 @@
   margin: 0;
 }
 body {
+  /* background-image: url(./img/dark-bg.jpg); */
+  /* background-position: center; */
   background-color: #121212;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -37,8 +39,7 @@ a:hover {
   box-shadow: 0 0 10px black;
   display: flex;
   height: 50px;
-  padding: 0 100px;
-  width: 100%;
+  padding: 0 110px;
 }
 
 .rb-initials {
@@ -46,9 +47,11 @@ a:hover {
   font-weight: 700;
   color: #03DAC6;
   margin-right: 20px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .main-container {
+  /* background-color: #000000; */
   margin-top: 100px;
   margin-left: 100px;
   width:85%;
