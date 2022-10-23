@@ -7,11 +7,11 @@ export default function Professional() {
           <h1 className="text-center text-5xl font-bold text-primary">
             Professional experience
           </h1>
-          <section className="grid grid-cols-12 gap-8 mt-16">
-            <figure className="col-span-2 col-start-2 flex align-middle">
+          <section className="grid grid-cols-8 gap-8 mt-16">
+            <figure className="col-span-8 lg:col-span-2 col-start-2 flex align-middle">
               <img src="/clina.svg" alt="" width="100%" />
             </figure>
-            <article className="col-span-6">
+            <article className="col-span-9 lg:col-span-6">
               <ul className="professional-list">
                 <li>
                   <span>Name:</span> Clina.care

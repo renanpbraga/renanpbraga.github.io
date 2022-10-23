@@ -9,20 +9,25 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import Professional from "./components/Professional/Professional";
 
 export function App() {
-  const links = ["WhoAmI", "Skills", "Experience", "Contact"];
+  const links = [
+    { link: "WhoAmI", url: "#whoami" },
+    { link: "Skills", url: "#skills" },
+    { link: "Experience", url: "#experience" },
+    { link: "Contact", url: "#contact" },
+  ];
   return (
     <>
-    <span id="top"></span>
-    <Navbar brand={"Renan Braga"} links={links}></Navbar>
-    <main className="relative" style={{'zIndex': 1}}>
-      <Header></Header>
-      <About></About>
-      <Skills></Skills>
-      <Professional></Professional>
-      <Contact></Contact>
-      <Footer></Footer>
-      <BackToTop></BackToTop>
-    </main>
+      <span id="top"></span>
+      <Navbar brand={"Renan Braga"} links={links}></Navbar>
+      <main className="relative" style={{ zIndex: 1 }}>
+        <Header></Header>
+        <About></About>
+        <Skills></Skills>
+        <Professional></Professional>
+        <Contact></Contact>
+        <Footer></Footer>
+        <BackToTop></BackToTop>
+      </main>
     </>
   );
 }

@@ -1,15 +1,12 @@
+import { INavbarLink } from "../../../Shared/interfaces/navbar-link.interface";
 
-interface ILink {
-  text: string;
-}
-
-export default function NavbarLink({ text }: ILink) {
+export default function NavbarLink({ link, url }: INavbarLink) {
   return (
     <a
       className="text-gray-500 underline-offset-4 hover:text-primary hover:underline"
-      href={`../#${text.toLowerCase()}`}
+      href={url}
     >
-      {text}
+      {link}
     </a>
   );
 }
