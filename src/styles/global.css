@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body {
+  background-color: rgb(243 244 246);
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+.professional-list {
+  ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+  }
+  span {
+    font-weight: bold;
+  }
+}
