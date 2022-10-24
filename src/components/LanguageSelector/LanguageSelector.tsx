@@ -34,8 +34,6 @@ export default function LanguageSelector() {
           style={{ backgroundImage: "url(/icon-brazil.svg)" }}
         >Pt-Br</option>
       </select>
-      {/* <button onClick={() => defineLanguage(en)}>English</button>
-      <button onClick={() => defineLanguage(pt_br)}>Portugues</button> */}
     </div>
   );
 }
