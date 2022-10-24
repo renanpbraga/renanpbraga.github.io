@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { BiMenu } from "react-icons/bi";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { BiMenu, BiMenuAltRight } from "react-icons/bi";
 import List from "../Navbar/List/List";
-import { INavbarLink } from "../Shared/interfaces/navbar-link.interface";
 import { INavbar } from "../Shared/interfaces/navbar.interface";
 
-export default function MobileMenu({ links }: any) {
+export default function MobileMenu({ links }: Partial<INavbar>) {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {}, [isMenuOpen]);
@@ -15,7 +13,7 @@ export default function MobileMenu({ links }: any) {
       <div className="relative cursor-pointer">
         {isMenuOpen ? (
           <>
-            <HiOutlineMenuAlt3 size={24} onClick={() => setIsMenuOpen(false)}/>
+            <BiMenuAltRight size={24} onClick={() => setIsMenuOpen(false)}/>
             <div className="absolute top-12 right-0 rounded-xl border border-gray-300 bg-white p-4 shadow-md w-52">
               <List links={links} orientation="flex-col"></List>
             </div>

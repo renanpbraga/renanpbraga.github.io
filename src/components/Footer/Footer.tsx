@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import { useLanguage } from "../../Context/LanguageContext";
 
 export default function Footer() {
+  const { language } = useLanguage();
+
   return (
-    <footer className="py-4 text-white relative text-center shadow-lg bg-primary" style={{'zIndex': -2}}>2022 - Desenvolvido por <span className="font-bold">Renan Braga</span> com Typescript, React e Tailwind.</footer>
-  )
+    <footer
+      className="relative bg-primary py-4 text-center text-white shadow-lg"
+      style={{ zIndex: -2 }}
+    >
+      {language. footer.description}
+    </footer>
+  );
 }

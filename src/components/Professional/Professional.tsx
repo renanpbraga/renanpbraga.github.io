@@ -1,42 +1,38 @@
+import { useLanguage } from "../../Context/LanguageContext";
+
 export default function Professional() {
+  const { language } = useLanguage();
+  const enterpriseOne = language.professional.enterpriseOne;
   return (
     <>
       <span id="experience"></span>
-      <section className="container min-h-[calc(100vh)] pt-32 pb-16 shadow-lg">
+      <section className="min-h-[calc(100vh)] pt-32 pb-16 shadow-lg">
         <section className="container">
           <h1 className="text-center text-5xl font-bold text-primary">
-            Professional experience
+            {language.professional.title}
           </h1>
-          <section className="grid grid-cols-8 gap-8 mt-16">
-            <figure className="col-span-8 lg:col-span-2 col-start-2 flex align-middle">
-              <img src="/clina.svg" alt="" width="100%" />
+          <section className="mt-16 grid grid-cols-8 gap-8">
+            <figure className="col-span-8 col-start-2 flex align-middle md:col-span-2">
+              <img src={enterpriseOne.image} alt="" className="w-full" />
             </figure>
-            <article className="col-span-9 lg:col-span-6">
+            <article className="col-span-9 md:col-span-6">
               <ul className="professional-list">
                 <li>
-                  <span>Name:</span> Clina.care
+                  <span>{enterpriseOne.name.title}: </span>
+                  {enterpriseOne.name.value}
                 </li>
                 <li>
-                  <span>Duration:</span> 10/2021 - today
+                  <span>{enterpriseOne.period.title}: </span>
+                  {enterpriseOne.period.value}
                 </li>
                 <li>
-                  <span>Responsibilities:</span>
+                  <span>{enterpriseOne.responsibilities.title}:</span>
                   <ul>
-                    <li>
-                      Collaborate with the Product Manager, Business Analysts,
-                      QA specialists and other developers;
-                    </li>
-                    <li>
-                      Identify opportunities to improve the front-end code and
-                      user experience;
-                    </li>
-                    <li>Develop new features;</li>
-                    <li>
-                      Improve and optimize performance of existing features;
-                    </li>
-                    <li>
-                    Set up and maintain a Storybook instance to document the applications set of components;
-                    </li>
+                    {enterpriseOne.responsibilities.value.map(
+                      (res: string, index: number) => (
+                        <li key={index}>{res}</li>
+                      )
+                    )}
                   </ul>
                 </li>
               </ul>

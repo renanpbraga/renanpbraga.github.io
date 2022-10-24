@@ -1,7 +1,9 @@
 import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useLanguage } from "../../Context/LanguageContext";
 
 export default function Contact() {
+  const { language } = useLanguage();
   return (
     <>
       <span id="contact"></span>
@@ -14,7 +16,7 @@ export default function Contact() {
             id="contact"
             className="text-center text-5xl font-bold text-primary"
           >
-            Contact
+            {language.contact.title}
           </h1>
           <section className="mt-8 flex mx-auto w-auto lg:w-96 flex-wrap justify-between">
             <article>

@@ -1,7 +1,9 @@
+import { useLanguage } from "../../Context/LanguageContext";
 import { ISkills } from "../Shared/interfaces/skills.interface";
 import { skillsList } from "../Shared/stubs/skills-list.stub";
 
 export default function Skills() {
+  const { language } = useLanguage();
   return (
     <>
       <span id="skills"></span>
@@ -14,7 +16,7 @@ export default function Skills() {
             id="skills"
             className="pt-32 text-center text-5xl font-bold text-primary"
           >
-            Skills
+            {language.skills.title}
           </h1>
           <section className="mt-8 flex flex-wrap justify-center">
             {skillsList.map((skill: ISkills, index: number) => {
