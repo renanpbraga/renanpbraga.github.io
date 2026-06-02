@@ -104,6 +104,6 @@ export const portuguese = {
     },
   },
   footer: {
-    description: `2022 - Desenvolvido por Renan Braga com Typescript, React e Tailwind.`
+    description: `2026 - Desenvolvido por Renan Braga com Typescript, React e Tailwind.`
   }
 };
