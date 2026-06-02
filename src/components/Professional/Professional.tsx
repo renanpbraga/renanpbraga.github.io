@@ -3,21 +3,7 @@ import { useLanguage } from "../../Context/LanguageContext";
 export default function Professional() {
   const { language } = useLanguage();
   const enterpriseOne = language.professional.enterpriseOne;
-  const enterpriseTwo = {
-    image: "/f1rst.jpg",
-    name: { value: "F1rst Digital Services" },
-    period: { value: "2023 - today" },
-    responsibilities: {
-      title: "Responsibilities",
-      value: [
-        "Build secure, high-performance user interfaces for digital banking products with a strong focus on accessibility and compliance.",
-        "Collaborate closely with product, design and backend teams to translate financial requirements into polished front-end experiences.",
-        "Optimize application performance, maintainability and scalability for high-traffic fintech platforms.",
-        "Implement state management, modular component libraries and shared design systems to support fast delivery and consistency.",
-        "Monitor production quality, run automated tests and iterate quickly on UX improvements based on user data and feedback.",
-      ],
-    },
-  };
+  const enterpriseTwo = language.professional.enterpriseTwo;
 
   return (
     <>
@@ -27,7 +13,7 @@ export default function Professional() {
           <div className="mx-auto max-w-5xl">
             <div className="text-center">
               <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm uppercase tracking-[0.35em] text-primary">
-                Experience
+                {language.navbar.experience}
               </span>
               <h1 className="mt-6 text-5xl font-semibold text-white">{language.professional.title}</h1>
             </div>

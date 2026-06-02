@@ -4,6 +4,7 @@ export const english = {
   navbar: {
     whoami: `WhoAmI`,
     skills: `Skills`,
+    ai: `AI`,
     experience: `Experience`,
     contact: `Contact`,
   },
@@ -20,6 +21,27 @@ export const english = {
   },
   skills: {
     title: `Skills`,
+  },
+  ai: {
+    badge: `AI & Development`,
+    title: `Developing with AI, without losing craft`,
+    subtitle: `I build front-end products that are designed to perform with or without AI, using automation where it adds value and human judgment where it matters most.`,
+    description: `I deliver front-end systems that leverage AI as an accelerator, not a crutch. My work balances rapid execution, robust quality, and a clear understanding of when AI should enhance decisions, not replace them.`,
+    bullets: [
+      `Use AI to speed up component design, prototyping and code generation while maintaining clean architecture.`,
+      `Validate AI-supported implementation against accessibility, security and production readiness.`,
+      `Adapt tooling to support internal AI workflows like prompt-driven specs, automated testing and documentation.`,
+      `Deliver scalable front-end solutions that remain stable with or without AI support.`,
+      `Communicate technical strategy clearly so stakeholders trust the product and the team.`,
+    ],
+    cardOne: {
+      title: `AI-aware development`,
+      description: `I can convert product ideas into polished interfaces using AI-generated assets while ensuring the final result is maintainable, reliable and aligned with business rules.`,
+    },
+    cardTwo: {
+      title: `Human-led execution`,
+      description: `I build the core experience with developer expertise, using AI only as a force multiplier for repetitive or exploratory tasks.`,
+    },
   },
   professional: {
     title: `Professional experience`,
@@ -44,9 +66,42 @@ export const english = {
       },
       image: `/clina.svg`,
     },
+    enterpriseTwo: {
+      image: `/f1rst.jpg`,
+      name: { value: `F1rst Digital Services` },
+      period: { value: `2023 - today` },
+      responsibilities: {
+        title: `Responsibilities`,
+        value: [
+          `Build secure, high-performance user interfaces for digital banking products with a strong focus on accessibility and compliance.`,
+          `Collaborate closely with product, design and backend teams to translate financial requirements into polished front-end experiences.`,
+          `Optimize application performance, maintainability and scalability for high-traffic fintech platforms.`,
+          `Implement state management, modular component libraries and shared design systems to support fast delivery and consistency.`,
+          `Monitor production quality, run automated tests and iterate quickly on UX improvements based on user data and feedback.`,
+        ],
+      },
+    },
   },
   contact: {
     title: `Contact`,
+    heading: `Let’s connect`,
+    description: `I’m available for challenging projects, remote roles, or collaboration. Send a message and let’s talk.`,
+    social: {
+      whatsapp: `WhatsApp`,
+      facebook: `Facebook`,
+      linkedin: `LinkedIn`,
+      github: `GitHub`,
+    },
+  },
+  certifications: {
+    badge: `Certifications`,
+    title: `Professional Credentials`,
+    subtitle: `Continuous learning and professional development through industry-recognized certifications.`,
+    card: {
+      title: `View My Certifications`,
+      description: `Explore my professional certifications and achievements on LinkedIn`,
+      cta: `Open LinkedIn`,
+    },
   },
   footer: {
     description: `2022 - Developed by Renan Braga com Typescript, React and Tailwind.`

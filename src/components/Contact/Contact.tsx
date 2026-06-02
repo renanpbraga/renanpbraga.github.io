@@ -15,9 +15,9 @@ export default function Contact() {
                 <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-primary">
                   {language.contact.title}
                 </span>
-                <h1 className="text-4xl font-semibold text-white">Let’s connect</h1>
+                <h1 className="text-4xl font-semibold text-white">{language.contact.heading}</h1>
                 <p className="max-w-2xl text-base leading-8 text-slate-400">
-                  I’m available for challenging projects, remote roles, or collaboration. Send a message and let’s talk.
+                  {language.contact.description}
                 </p>
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
@@ -25,22 +25,22 @@ export default function Contact() {
                   {
                     href: "https://wa.me/5521968951498?text=Olá,%20Renan!%20Encontrei%20seu%20portifólio%20e...",
                     icon: <IoLogoWhatsapp size={28} />,
-                    label: "WhatsApp",
+                    label: language.contact.social.whatsapp,
                   },
                   {
                     href: "https://facebook.com/renanpbraga",
                     icon: <BsFacebook size={28} />,
-                    label: "Facebook",
+                    label: language.contact.social.facebook,
                   },
                   {
                     href: "https://www.linkedin.com/in/renanpbraga/",
                     icon: <BsLinkedin size={28} />,
-                    label: "LinkedIn",
+                    label: language.contact.social.linkedin,
                   },
                   {
                     href: "https://github.com/renanpbraga",
                     icon: <BsGithub size={28} />,
-                    label: "GitHub",
+                    label: language.contact.social.github,
                   },
                 ].map((item) => (
                   <a

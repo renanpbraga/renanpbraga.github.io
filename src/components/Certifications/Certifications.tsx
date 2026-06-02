@@ -10,13 +10,13 @@ export default function Certifications() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-5xl text-center">
             <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-primary shadow-sm shadow-primary/10">
-              Certifications
+              {language.certifications.badge}
             </span>
             <h1 className="mt-6 text-5xl font-semibold text-white">
-              Professional Credentials
+              {language.certifications.title}
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-400">
-              Continuous learning and professional development through industry-recognized certifications.
+              {language.certifications.subtitle}
             </p>
           </div>
 
@@ -48,15 +48,15 @@ export default function Certifications() {
 
                 <div className="space-y-3">
                   <h2 className="text-2xl font-semibold text-white">
-                    View My Certifications
+                    {language.certifications.card.title}
                   </h2>
                   <p className="text-slate-400">
-                    Explore my professional certifications and achievements on LinkedIn
+                    {language.certifications.card.description}
                   </p>
                 </div>
 
                 <div className="flex items-center gap-2 pt-4 text-primary transition group-hover:translate-x-1">
-                  <span className="font-semibold">Open LinkedIn</span>
+                  <span className="font-semibold">{language.certifications.card.cta}</span>
                   <svg
                     className="h-5 w-5"
                     fill="none"

@@ -4,6 +4,7 @@ export const portuguese = {
   navbar: {
     whoami: `Sobre mim`,
     skills: `Habilidades`,
+    ai: `IA`,
     experience: `Experiência`,
     contact: `Contato`,
   },
@@ -20,6 +21,27 @@ export const portuguese = {
   },
   skills: {
     title: `Habilidades`,
+  },
+  ai: {
+    badge: `IA & Desenvolvimento`,
+    title: `Desenvolver com IA sem perder o ofício`,
+    subtitle: `Construo produtos front-end pensados para funcionar com ou sem IA, usando automações onde agregam valor e julgamento humano onde importa mais.`,
+    description: `Entrego sistemas front-end que usam IA como aceleradora, não como muleta. Meu trabalho equilibra execução rápida, qualidade robusta e clareza sobre quando a IA deve apoiar decisões.`,
+    bullets: [
+      `Uso IA para acelerar design de componentes, prototipagem e geração de código, mantendo arquitetura limpa.`,
+      `Valido implementações suportadas por IA contra acessibilidade, segurança e preparação para produção.`,
+      `Adapto ferramentas para suportar fluxos de trabalho internos com IA, como especificações por prompt, testes automáticos e documentação.`,
+      `Entrego soluções front-end escaláveis que permanecem estáveis com ou sem suporte de IA.`,
+      `Comunico a estratégia técnica com clareza para que stakeholders confiem no produto e no time.`,
+    ],
+    cardOne: {
+      title: `Desenvolvimento com consciência de IA`,
+      description: `Transformo ideias de produto em interfaces polidas usando ativos gerados por IA, garantindo que o resultado final seja sustentável e alinhado às regras do negócio.`,
+    },
+    cardTwo: {
+      title: `Execução liderada por humano`,
+      description: `Construo a experiência central com expertise de desenvolvedor, usando IA apenas como multiplicador de força para tarefas repetitivas ou exploratórias.`,
+    },
   },
   professional: {
     title: `Experiência profissional`,
@@ -44,9 +66,42 @@ export const portuguese = {
       },
       image: `/clina.svg`,
     },
+    enterpriseTwo: {
+      image: `/f1rst.jpg`,
+      name: { value: `F1rst Digital Services` },
+      period: { value: `2023 - hoje` },
+      responsibilities: {
+        title: `Responsabilidades`,
+        value: [
+          `Construir interfaces de usuário seguras e de alto desempenho para produtos bancários digitais com foco em acessibilidade e conformidade.`,
+          `Colaborar estreitamente com produto, design e equipes de backend para traduzir requisitos financeiros em experiências front-end refinadas.`,
+          `Otimizar performance, mantenibilidade e escalabilidade para plataformas fintech de alto tráfego.`,
+          `Implementar gerenciamento de estado, bibliotecas de componentes modulares e sistemas de design compartilhados para acelerar entregas.`,
+          `Monitorar qualidade de produção, executar testes automatizados e iterar rapidamente em melhorias de UX com base em dados de usuários.`,
+        ],
+      },
+    },
   },
   contact: {
     title: `Contato`,
+    heading: `Vamos conversar`,
+    description: `Estou disponível para projetos desafiadores, vagas remotas ou colaboração. Envie uma mensagem e vamos conversar.`,
+    social: {
+      whatsapp: `WhatsApp`,
+      facebook: `Facebook`,
+      linkedin: `LinkedIn`,
+      github: `GitHub`,
+    },
+  },
+  certifications: {
+    badge: `Certificações`,
+    title: `Credenciais profissionais`,
+    subtitle: `Aprendizado contínuo e desenvolvimento profissional por meio de certificações reconhecidas pelo mercado.`,
+    card: {
+      title: `Ver minhas certificações`,
+      description: `Explore minhas certificações profissionais e conquistas no LinkedIn`,
+      cta: `Abrir LinkedIn`,
+    },
   },
   footer: {
     description: `2022 - Desenvolvido por Renan Braga com Typescript, React e Tailwind.`
