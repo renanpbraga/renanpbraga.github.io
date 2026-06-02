@@ -16,7 +16,7 @@ export const english = {
     title: `WhoAmI`,
     greetings: "Hi!",
     paragraph1: `I'm Renan Braga, ${age} years old, full-stack developer, and I've been working as a front-end developer since 2021. I studied web development at Trybe, one of the best web development schools in Brazil. I'm experienced in development using Javascript and Typescript, React and Angular in adition to other libraries and frameworks.`,
-    paragraph2: `I have a MSc. degree in Agronomy from Universidade Federal Rural do Rio de Janeiro (UFRRJ). Currently, I'm in career transition, however all my background in contact with science made me more accurate, analytic and rational person. I still like all kind of science stuff, I'm a NERD`,
+    paragraph2: `I hold a Master's degree in Agronomy from the Federal Rural University of Rio de Janeiro (UFRRJ). My scientific background has strongly influenced the way I approach technology, fostering a data-driven, analytical, and solution-oriented mindset. Years of research experience taught me to think critically, solve complex problems, and continuously seek improvement. While my career path has evolved into Information Technology, my passion for science and lifelong learning remains unchanged. Yes, I'm a NERD.`,
     paragraph3: `In adition to all this technical aspect of my background, I also developed soft skills during all these years, like comunication, empathy, leadership and management skills, adaptability and continuous learning, teaching...`,
   },
   skills: {
@@ -95,7 +95,7 @@ export const english = {
   },
   certifications: {
     badge: `Certifications`,
-    title: `Professional Credentials`,
+    title: `Professional Certifications`,
     subtitle: `Continuous learning and professional development through industry-recognized certifications.`,
     card: {
       title: `View My Certifications`,

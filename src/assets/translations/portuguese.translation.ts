@@ -15,8 +15,8 @@ export const portuguese = {
   whoami: {
     title: `Sobre mim`,
     greetings: `Olá!`,
-    paragraph1: `Sou Renan Braga, ${age} anos, desenvolvedor full-stack, e tenho trabalhado como desenvolvedor front-end desde 2021. Estudei desenvolvimento web na Trybe, uma das melhores escolas de desenvolvimento web do Brasil. Tenho experiência em desenvolvimento utilizando Javascript e Typescript, React e Angulas além de outras bibliotecas e frameworks.`,
-    paragraph2: `Tenho mestrado em Agronomia pela Universidade Federal Rural do Rio de Janeiro (UFRRJ). Atualmente estou em transição de carreira, no entanto todos os meus antecedentes em contato com a ciência, me fizeram mais preciso, analítico e racional. Eu ainda me interesso por assuntos científicos. Sim, sou NERD.`,
+    paragraph1: `Sou Renan Braga, ${age} anos, desenvolvedor full-stack, e tenho trabalhado como desenvolvedor front-end desde 2021. Estudei desenvolvimento web na Trybe, uma das melhores escolas de desenvolvimento web do Brasil. Tenho experiência em desenvolvimento utilizando Javascript e Typescript, React e Angular além de outras bibliotecas e frameworks.`,
+    paragraph2: `Tenho mestrado em Agronomia pela Universidade Federal Rural do Rio de Janeiro (UFRRJ). Hoje atuo na área de Tecnologia da Informação, trazendo comigo toda a bagagem adquirida durante minha trajetória científica. Anos dedicados à pesquisa e ao método científico desenvolveram em mim um pensamento analítico, preciso e orientado à resolução de problemas. Apesar da mudança de área, continuo fascinado pela ciência e pela busca constante por conhecimento. Sim, sou NERD.`,
     paragraph3: `Além de todo esse aspecto técnico do meu passado, também desenvolvi soft skills durante todos esses anos, como comunicação, empatia, liderança e habilidades gerenciais, adaptabilidade e aprendizado contínuo, ensino...`,
   },
   skills: {
@@ -95,7 +95,7 @@ export const portuguese = {
   },
   certifications: {
     badge: `Certificações`,
-    title: `Credenciais profissionais`,
+    title: `Certificações profissionais`,
     subtitle: `Aprendizado contínuo e desenvolvimento profissional por meio de certificações reconhecidas pelo mercado.`,
     card: {
       title: `Ver minhas certificações`,
