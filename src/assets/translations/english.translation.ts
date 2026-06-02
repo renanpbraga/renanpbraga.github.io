@@ -15,12 +15,13 @@ export const english = {
   whoami: {
     title: `WhoAmI`,
     greetings: "Hi!",
-    paragraph1: `I'm Renan Braga, ${age} years old, full-stack developer, and I've been working as a front-end developer since 2021. I studied web development at Trybe, one of the best web development schools in Brazil. I'm experienced in development using Javascript and Typescript, React and Angular in adition to other libraries and frameworks.`,
-    paragraph2: `I hold a Master's degree in Agronomy from the Federal Rural University of Rio de Janeiro (UFRRJ). My scientific background has strongly influenced the way I approach technology, fostering a data-driven, analytical, and solution-oriented mindset. Years of research experience taught me to think critically, solve complex problems, and continuously seek improvement. While my career path has evolved into Information Technology, my passion for science and lifelong learning remains unchanged. Yes, I'm a NERD.`,
-    paragraph3: `In adition to all this technical aspect of my background, I also developed soft skills during all these years, like comunication, empathy, leadership and management skills, adaptability and continuous learning, teaching...`,
+    paragraph1: `Full-Stack Developer with expertise in Angular, React, JavaScript, and TypeScript, focused on designing and delivering scalable, maintainable, and high-performance web applications.`,
+    paragraph2: `Backed by a Master's degree from the Federal Rural University of Rio de Janeiro (UFRRJ), I bring a research-driven approach to software development, combining analytical thinking, problem-solving skills, and a commitment to continuous improvement.`,
+    paragraph3: `Strongly committed to collaboration, knowledge sharing, and building solutions that align technical excellence with business objectives.`,
   },
   skills: {
     title: `Skills`,
+    description: `Technologies and tools I use to build efficient, modern and scalable applications.`,
   },
   ai: {
     badge: `AI & Development`,
