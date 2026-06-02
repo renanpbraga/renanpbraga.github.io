@@ -15,12 +15,13 @@ export const portuguese = {
   whoami: {
     title: `Sobre mim`,
     greetings: `Olá!`,
-    paragraph1: `Sou Renan Braga, ${age} anos, desenvolvedor full-stack, e tenho trabalhado como desenvolvedor front-end desde 2021. Estudei desenvolvimento web na Trybe, uma das melhores escolas de desenvolvimento web do Brasil. Tenho experiência em desenvolvimento utilizando Javascript e Typescript, React e Angular além de outras bibliotecas e frameworks.`,
-    paragraph2: `Tenho mestrado em Agronomia pela Universidade Federal Rural do Rio de Janeiro (UFRRJ). Hoje atuo na área de Tecnologia da Informação, trazendo comigo toda a bagagem adquirida durante minha trajetória científica. Anos dedicados à pesquisa e ao método científico desenvolveram em mim um pensamento analítico, preciso e orientado à resolução de problemas. Apesar da mudança de área, continuo fascinado pela ciência e pela busca constante por conhecimento. Sim, sou NERD.`,
-    paragraph3: `Além de todo esse aspecto técnico do meu passado, também desenvolvi soft skills durante todos esses anos, como comunicação, empatia, liderança e habilidades gerenciais, adaptabilidade e aprendizado contínuo, ensino...`,
+    paragraph1: `Desenvolvedor Full Stack com experiência em Angular, React, JavaScript e TypeScript, focado no desenvolvimento de aplicações web escaláveis, performáticas e de fácil manutenção. Atuo aplicando boas práticas de engenharia de software para criar soluções que conciliam qualidade técnica, experiência do usuário e objetivos de negócio.`,
+    paragraph2: `Mestre em Agronomia pela Universidade Federal Rural do Rio de Janeiro (UFRRJ), trago para a área de tecnologia uma sólida formação científica e analítica. Minha trajetória na pesquisa fortaleceu habilidades como pensamento crítico, resolução estruturada de problemas, tomada de decisão baseada em evidências e busca contínua por aprimoramento.`,
+    paragraph3: `Além da expertise técnica, valorizo a comunicação, a colaboração entre equipes, a troca de conhecimento e o aprendizado contínuo. Busco sempre desenvolver soluções que gerem impacto real para usuários e organizações, mantendo o compromisso com a excelência técnica e a evolução profissional.`,
   },
   skills: {
     title: `Habilidades`,
+    description: `Tecnologias e ferramentas que uso para construir aplicações eficientes, modernas e escaláveis.`,
   },
   ai: {
     badge: `IA & Desenvolvimento`,

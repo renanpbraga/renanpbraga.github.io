@@ -17,7 +17,7 @@ export default function Skills() {
               {language.skills.title}
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-400">
-              Technologies and tools I use to build efficient, modern and scalable applications.
+              {language.skills.description}
             </p>
           </div>
           <section className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
