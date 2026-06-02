@@ -30,7 +30,7 @@ export const english = {
       },
       period: {
         title: `Period`,
-        value: `10/2021 - today`,
+        value: `2021 - 2023`,
       },
       responsibilities: {
         title: `Responsibilities`,

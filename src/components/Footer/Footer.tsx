@@ -5,11 +5,10 @@ export default function Footer() {
   const { language } = useLanguage();
 
   return (
-    <footer
-      className="relative bg-primary py-4 text-center text-white shadow-lg"
-      style={{ zIndex: -2 }}
-    >
-      {language. footer.description}
+    <footer className="border-t border-white/10 bg-slate-950 py-6 text-center text-slate-400">
+      <div className="container mx-auto px-4">
+        {language.footer.description}
+      </div>
     </footer>
   );
 }

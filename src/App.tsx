@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import "./styles/global.css";
 import BackToTop from "./components/BackToTop/BackToTop";
 import Professional from "./components/Professional/Professional";
+import Certifications from "./components/Certifications/Certifications";
 import { useLanguage } from "./Context/LanguageContext";
 import LanguageSelector from "./components/LanguageSelector/LanguageSelector";
 
@@ -29,6 +30,7 @@ export function App() {
         <About></About>
         <Skills></Skills>
         <Professional></Professional>
+        <Certifications></Certifications>
         <Contact></Contact>
         <Footer></Footer>
         <BackToTop></BackToTop>
