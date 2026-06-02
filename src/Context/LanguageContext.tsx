@@ -1,8 +1,10 @@
 import { createContext, ReactNode, useContext, useState } from "react";
+import { english } from "../assets/translations/english.translation";
 import { portuguese } from "../assets/translations/portuguese.translation";
 
 type LanguageContextData = {
   language: any;
+  languageKey: string;
   defineLanguage: (language: any) => void;
 };
 
@@ -13,14 +15,39 @@ interface LanguageProviderProps {
 }
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
-  const [language, setLanguage] = useState<any>(portuguese);
+  let initialKey = "pt_br";
+  try {
+    const stored = localStorage.getItem("site_language");
+    if (stored === "en" || stored === "pt_br") {
+      initialKey = stored;
+    }
+  } catch (e) {
+    initialKey = "pt_br";
+  }
 
-  const defineLanguage = (language: any) => {
-    setLanguage(language);
+  const initialLanguage = initialKey === "en" ? english : portuguese;
+  const [language, setLanguage] = useState<any>(initialLanguage);
+  const [languageKey, setLanguageKey] = useState<string>(initialKey);
+
+  const defineLanguage = (languageOrKey: any) => {
+    const key = typeof languageOrKey === "string"
+      ? languageOrKey
+      : languageOrKey === english
+      ? "en"
+      : "pt_br";
+
+    const langObj = key === "en" ? english : portuguese;
+    setLanguage(langObj);
+    setLanguageKey(key);
+    try {
+      localStorage.setItem("site_language", key);
+    } catch (e) {
+      // ignore
+    }
   };
 
   return (
-    <languageContext.Provider value={{ language, defineLanguage }}>
+    <languageContext.Provider value={{ language, languageKey, defineLanguage }}>
       {children}
     </languageContext.Provider>
   );

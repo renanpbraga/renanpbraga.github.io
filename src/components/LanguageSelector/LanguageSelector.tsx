@@ -1,43 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { english } from "../../assets/translations/english.translation";
 import { portuguese } from "../../assets/translations/portuguese.translation";
 import { useLanguage } from "../../Context/LanguageContext";
 
 export default function LanguageSelector() {
-  const { defineLanguage } = useLanguage();
-  const [selectedLanguage, setSelectedLanguage] = useState("pt_br");
+  const { defineLanguage, languageKey } = useLanguage();
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    // load persisted language if present
-    try {
-      const stored = localStorage.getItem("site_language");
-      if (stored) {
-        setSelectedLanguage(stored);
-        if (stored === "en") defineLanguage(english);
-        else defineLanguage(portuguese);
-        return;
-      }
-    } catch (e) {
-      // ignore
-    }
-
-    // fallback to default
-    if (selectedLanguage === "en") defineLanguage(english);
-    else defineLanguage(portuguese);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const selectedLanguage = languageKey || "pt_br";
 
   const selectLanguage = (lng: string) => {
-    try {
-      localStorage.setItem("site_language", lng);
-    } catch (e) {
-      // ignore
-    }
-
     if (lng === "en") defineLanguage(english);
     else defineLanguage(portuguese);
-    setSelectedLanguage(lng);
     setOpen(false);
   };
 
