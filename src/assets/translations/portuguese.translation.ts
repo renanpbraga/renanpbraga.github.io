@@ -11,6 +11,8 @@ export const portuguese = {
   header: {
     title: `Bem-vindo à minha página!`,
     subtitle: `Fico feliz que esteja aqui ;)`,
+    aboutButton: `Sobre mim`,
+    contactButton: `Contato`,
   },
   whoami: {
     title: `Sobre mim`,

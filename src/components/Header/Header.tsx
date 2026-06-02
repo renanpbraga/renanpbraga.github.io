@@ -32,13 +32,13 @@ export default function Header() {
                   href="#whoami"
                   className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-primary/20 transition duration-300 hover:-translate-y-0.5 hover:shadow-primary/35"
                 >
-                  About me
+                  {language.header.aboutButton}
                 </a>
                 <a
                   href="#contact"
                   className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-white/10 px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:border-primary hover:text-primary"
                 >
-                  Contact
+                  {language.header.contactButton}
                 </a>
               </div>
             </div>
