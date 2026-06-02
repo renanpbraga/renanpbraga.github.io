@@ -2,11 +2,13 @@ import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Skills from "./components/Skills/Skills";
+import AiCapabilities from "./components/AiCapabilities/AiCapabilities";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import "./styles/global.css";
 import BackToTop from "./components/BackToTop/BackToTop";
 import Professional from "./components/Professional/Professional";
+import Certifications from "./components/Certifications/Certifications";
 import { useLanguage } from "./Context/LanguageContext";
 import LanguageSelector from "./components/LanguageSelector/LanguageSelector";
 
@@ -16,6 +18,7 @@ export function App() {
   const links = [
     { link: whoami, url: "#whoami" },
     { link: skills, url: "#skills" },
+    { link: language.navbar.ai, url: "#aicapabilities" },
     { link: experience, url: "#experience" },
     { link: contact, url: "#contact" },
   ];
@@ -28,7 +31,9 @@ export function App() {
         <Header></Header>
         <About></About>
         <Skills></Skills>
+        <AiCapabilities></AiCapabilities>
         <Professional></Professional>
+        <Certifications></Certifications>
         <Contact></Contact>
         <Footer></Footer>
         <BackToTop></BackToTop>

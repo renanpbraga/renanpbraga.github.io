@@ -1,39 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { english } from "../../assets/translations/english.translation";
 import { portuguese } from "../../assets/translations/portuguese.translation";
 import { useLanguage } from "../../Context/LanguageContext";
 
 export default function LanguageSelector() {
-  const en: any = english;
-  const pt_br: any = portuguese;
+  const { defineLanguage, languageKey } = useLanguage();
+  const [open, setOpen] = useState(false);
+
+  const selectedLanguage = languageKey || "pt_br";
 
   const selectLanguage = (lng: string) => {
-    if (lng == "en") {
-      defineLanguage(en);
-    } else {
-      defineLanguage(pt_br);
-    }
+    if (lng === "en") defineLanguage(english);
+    else defineLanguage(portuguese);
+    setOpen(false);
   };
 
-  const { defineLanguage } = useLanguage();
   return (
-    <div className="absolute top-4 right-16">
-      <select
-        name="language-select"
-        id="language-select"
-        className="bg-white border border-gray-300 rounded-xl outline-none"
-        onChange={(e) => selectLanguage(e.target.value)}
-      >
-        <option
-          value="en"
-          style={{ backgroundImage: "url(/icon-usa.svg)" }}
-          selected
-        >En</option>
-        <option
-          value="pt_br"
-          style={{ backgroundImage: "url(/icon-brazil.svg)" }}
-        >Pt-Br</option>
-      </select>
+    <div className="absolute right-4 top-4 z-50">
+      <div className="relative" tabIndex={0} onBlur={() => setOpen(false)}>
+        <button
+          type="button"
+          aria-haspopup="listbox"
+          aria-expanded={open}
+          onClick={() => setOpen((s) => !s)}
+          className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-slate-950/95 px-4 py-2 text-slate-100 outline-none shadow-lg shadow-black/20"
+        >
+          <img
+            src={selectedLanguage === "en" ? "/icon-usa.svg" : "/icon-brazil.svg"}
+            alt={selectedLanguage === "en" ? "US flag" : "Brazil flag"}
+            className="h-5 w-5 flex-shrink-0"
+          />
+          <span className="text-sm font-medium">{selectedLanguage === "en" ? "En" : "Pt-Br"}</span>
+        </button>
+
+        {open && (
+          <ul
+            role="listbox"
+            className="absolute right-0 mt-2 w-36 overflow-hidden rounded-2xl bg-slate-950/95 border border-white/10 shadow-lg"
+          >
+            <li
+              role="option"
+              onMouseDown={() => selectLanguage("en")}
+              className="flex cursor-pointer items-center gap-2 px-4 py-2 hover:bg-slate-900"
+            >
+              <img src="/icon-usa.svg" alt="US flag" className="h-5 w-5" />
+              <span>En</span>
+            </li>
+            <li
+              role="option"
+              onMouseDown={() => selectLanguage("pt_br")}
+              className="flex cursor-pointer items-center gap-2 px-4 py-2 hover:bg-slate-900"
+            >
+              <img src="/icon-brazil.svg" alt="Brazil flag" className="h-5 w-5" />
+              <span>Pt-Br</span>
+            </li>
+          </ul>
+        )}
+      </div>
     </div>
   );
 }

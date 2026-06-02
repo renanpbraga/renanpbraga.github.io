@@ -4,21 +4,15 @@ import NavbarLink from "./NavbarLink/NavbarLink";
 
 export default function List({ links, orientation }: any) {
   return (
-    <>
-      <ul className={`flex justify-between ${orientation}`}>
-        {links.map((link: INavbarLink, index: number) => {
-          return (
-            <li
-              className={`justify-between ${
-                orientation == "flex-col" ? "my-2 flex-col" : "my-0"
-              })`}
-              key={index}
-            >
-              <NavbarLink url={link.url} link={link.link}></NavbarLink>
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <ul className={`flex ${orientation} items-center gap-8`}>
+      {links.map((link: INavbarLink, index: number) => (
+        <li
+          className={orientation === "flex-col" ? "my-2" : "my-0"}
+          key={index}
+        >
+          <NavbarLink url={link.url} link={link.link} />
+        </li>
+      ))}
+    </ul>
   );
 }

@@ -7,74 +7,59 @@ export default function Contact() {
   return (
     <>
       <span id="contact"></span>
-      <section
-        className="relative bg-white pt-16 pb-16 shadow-md shadow-gray-600"
-        style={{ zIndex: -1 }}
-      >
-        <section className="container">
-          <h1
-            id="contact"
-            className="text-center text-5xl font-bold text-primary"
-          >
-            {language.contact.title}
-          </h1>
-          <section className="mt-8 flex mx-auto w-auto lg:w-96 flex-wrap justify-between">
-            <article>
-              <a
-                href="https://wa.me/5521968951498?text=Olá, Renan! Encontrei seu portifólio e..."
-                target="_blank"
-              >
-                <IoLogoWhatsapp
-                  size={50}
-                  onMouseOver={({ target }: any) =>
-                    (target.style.color = "rgb(126 34 206)")
-                  }
-                  onMouseOut={({ target }: any) =>
-                    (target.style.color = "rgb(0 0 0)")
-                  }
-                />
-              </a>
-            </article>
-            <article>
-              <a href="https://facebook.com/renanpbraga" target="_blank">
-                <BsFacebook
-                  size={50}
-                  onMouseOver={({ target }: any) =>
-                    (target.style.color = "rgb(126 34 206)")
-                  }
-                  onMouseOut={({ target }: any) =>
-                    (target.style.color = "rgb(0 0 0)")
-                  }
-                />
-              </a>
-            </article>
-            <article>
-              <a href="https://www.linkedin.com/in/renanpbraga/">
-                <BsLinkedin
-                  size={50}
-                  onMouseOver={({ target }: any) =>
-                    (target.style.color = "rgb(126 34 206)")
-                  }
-                  onMouseOut={({ target }: any) =>
-                    (target.style.color = "rgb(0 0 0)")
-                  }
-                />
-              </a>
-            </article>
-            <article>
-              <a href="https://github.com/renanpbraga" target="_blank">
-                <BsGithub
-                  size={50}
-                  onMouseOver={({ target }: any) =>
-                    (target.style.color = "rgb(126 34 206)")
-                  }
-                  onMouseOut={({ target }: any) =>
-                    (target.style.color = "rgb(0 0 0)")
-                  }
-                />
-              </a>
-            </article>
-          </section>
+      <section className="bg-slate-950 py-24 text-slate-100">
+        <section className="container mx-auto px-4">
+          <div className="mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/85 p-10 shadow-[0_40px_120px_-45px_rgba(15,23,42,0.7)]">
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="space-y-5">
+                <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-primary">
+                  {language.contact.title}
+                </span>
+                <h1 className="text-4xl font-semibold text-white">{language.contact.heading}</h1>
+                <p className="max-w-2xl text-base leading-8 text-slate-400">
+                  {language.contact.description}
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  {
+                    href: "https://wa.me/5521968951498?text=Olá,%20Renan!%20Encontrei%20seu%20portifólio%20e...",
+                    icon: <IoLogoWhatsapp size={28} />,
+                    label: language.contact.social.whatsapp,
+                  },
+                  {
+                    href: "https://facebook.com/renanpbraga",
+                    icon: <BsFacebook size={28} />,
+                    label: language.contact.social.facebook,
+                  },
+                  {
+                    href: "https://www.linkedin.com/in/renanpbraga/",
+                    icon: <BsLinkedin size={28} />,
+                    label: language.contact.social.linkedin,
+                  },
+                  {
+                    href: "https://github.com/renanpbraga",
+                    icon: <BsGithub size={28} />,
+                    label: language.contact.social.github,
+                  },
+                ].map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex items-center justify-center gap-3 rounded-3xl border border-white/10 bg-slate-950/80 px-4 py-6 text-slate-100 transition duration-300 hover:-translate-y-1 hover:border-primary hover:text-primary"
+                    aria-label={item.label}
+                  >
+                    <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-white/10 text-primary transition duration-300 group-hover:bg-primary/20">
+                      {item.icon}
+                    </div>
+                    <span className="text-sm font-semibold">{item.label}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
         </section>
       </section>
     </>

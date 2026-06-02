@@ -18,9 +18,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   let initialKey = "pt_br";
   try {
     const stored = localStorage.getItem("site_language");
-    if (stored === "en" || stored === "pt_br") {
-      initialKey = stored;
-    }
+    if (stored) initialKey = stored;
   } catch (e) {
     initialKey = "pt_br";
   }
@@ -30,11 +28,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   const [languageKey, setLanguageKey] = useState<string>(initialKey);
 
   const defineLanguage = (languageOrKey: any) => {
-    const key = typeof languageOrKey === "string"
-      ? languageOrKey
-      : languageOrKey === english
-      ? "en"
-      : "pt_br";
+    let key = "pt_br";
+    if (typeof languageOrKey === "string") key = languageOrKey;
+    else key = languageOrKey === english ? "en" : "pt_br";
 
     const langObj = key === "en" ? english : portuguese;
     setLanguage(langObj);
